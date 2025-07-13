@@ -663,129 +663,6 @@ const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
 window.open(whatsappURL, '_blank');
 });
 
-// 3. CALCULATEUR DE DEVIS
-const calculatorModal = document.getElementById('calculator-modal');
-const calculatorClose = document.getElementById('calculator-close');
-const calcSteps = document.querySelectorAll('.calc-step');
-const calcNext = document.getElementById('calc-next');
-const calcPrev = document.getElementById('calc-prev');
-
-let currentCalcStep = 1;
-let calcData = {
-service: '',
-basePrice: 0,
-weight: 0,
-volume: 0,
-origin: '',
-destination: '',
-options: [],
-extraCost: 0
-};
-
-function openCalculator() {
-calculatorModal.classList.add('active');
-document.body.style.overflow = 'hidden';
-}
-
-function closeCalculator() {
-calculatorModal.classList.remove('active');
-document.body.style.overflow = '';
-currentCalcStep = 1;
-showCalcStep(1);
-}
-
-function showCalcStep(step) {
-calcSteps.forEach((stepEl, index) => {
-stepEl.classList.toggle('active', index + 1 === step);
-});
-
-calcPrev.style.display = step > 1 ? 'inline-flex' : 'none';
-calcNext.textContent = step === calcSteps.length ? 'Calculer' : 'Suivant';
-
-if (step === calcSteps.length) {
-calculatePrice();
-calcNext.style.display = 'none';
-} else {
-calcNext.style.display = 'inline-flex';
-}
-}
-
-function calculatePrice() {
-let totalPrice = calcData.basePrice;
-
-// Calcul basé sur poids et volume
-const weightFactor = Math.max(calcData.weight * 0.5, 0);
-const volumeFactor = Math.max(calcData.volume * 10, 0);
-
-// Facteur distance
-let distanceFactor = 1;
-if (calcData.destination === 'international') {
-distanceFactor = 2.5;
-} else if (calcData.origin !== calcData.destination) {
-distanceFactor = 1.5;
-}
-
-totalPrice = (totalPrice + weightFactor + volumeFactor) * distanceFactor + calcData.extraCost;
-
-document.getElementById('final-price').textContent = `${Math.round(totalPrice)} USD`;
-}
-
-// Event listeners calculateur
-document.addEventListener('click', (e) => {
-if (e.target.closest('.btn') && e.target.textContent.includes('Calculer')) {
-openCalculator();
-}
-
-if (e.target.classList.contains('calc-option')) {
-const step = currentCalcStep;
-
-if (step === 1) {
-    // Sélection service
-    document.querySelectorAll('#step-1 .calc-option').forEach(opt => opt.classList.remove(
-        'selected'));
-    e.target.classList.add('selected');
-    calcData.service = e.target.dataset.service;
-    calcData.basePrice = parseInt(e.target.dataset.price);
-} else if (step === 3) {
-    // Options supplémentaires
-    e.target.classList.toggle('selected');
-    const option = e.target.dataset.option;
-    const extraCost = parseInt(e.target.dataset.extra);
-
-    if (e.target.classList.contains('selected')) {
-        calcData.options.push(option);
-        calcData.extraCost += extraCost;
-    } else {
-        calcData.options = calcData.options.filter(opt => opt !== option);
-        calcData.extraCost -= extraCost;
-    }
-}
-}
-});
-
-calculatorClose.addEventListener('click', closeCalculator);
-
-calcNext.addEventListener('click', () => {
-if (currentCalcStep < calcSteps.length) {
-// Validation des étapes
-if (currentCalcStep === 2) {
-    calcData.weight = parseFloat(document.getElementById('calc-weight').value) || 0;
-    calcData.volume = parseFloat(document.getElementById('calc-volume').value) || 0;
-    calcData.origin = document.getElementById('calc-origin').value;
-    calcData.destination = document.getElementById('calc-destination').value;
-}
-
-currentCalcStep++;
-showCalcStep(currentCalcStep);
-}
-});
-
-calcPrev.addEventListener('click', () => {
-if (currentCalcStep > 1) {
-currentCalcStep--;
-showCalcStep(currentCalcStep);
-}
-});
 
 // 4. PRISE DE RDV
 const rdvModal = document.getElementById('rdv-modal');
@@ -964,16 +841,10 @@ closeRdv();
 
 // Boutons d'accès rapide aux nouvelles fonctionnalités
 document.addEventListener('click', (e) => {
-if (e.target.textContent.includes('Demander un devis') ||
-e.target.closest('button')?.textContent.includes('devis')) {
-openCalculator();
-}
-
-if (e.target.textContent.includes('Demander un devis') && e.target.classList.contains(
-'suggestion-btn')) {
-toggleChatbot();
-setTimeout(() => openCalculator(), 500);
-}
+    if (e.target.textContent.includes('Demander un devis') && e.target.classList.contains(
+        'suggestion-btn')) {
+        toggleChatbot();
+    }
 });
 
 // Animation d'entrée pour les nouveaux éléments
@@ -983,11 +854,10 @@ chatBadge.style.display = 'flex';
 
 // Fermer modals avec Escape
 document.addEventListener('keydown', (e) => {
-if (e.key === 'Escape') {
-if (calculatorModal.classList.contains('active')) closeCalculator();
-if (rdvModal.classList.contains('active')) closeRdv();
-if (chatbotOpen) toggleChatbot();
-}
+    if (e.key === 'Escape') {
+        if (rdvModal.classList.contains('active')) closeRdv();
+        if (chatbotOpen) toggleChatbot();
+    }
 });
 
 console.log('💬 Fonctionnalités Communication Client activées !');
