@@ -190,6 +190,8 @@ function animateCounters() {
 const counters = document.querySelectorAll('.stat-number');
 
 counters.forEach(counter => {
+if (counter.classList.contains('counted')) return;
+counter.classList.add('counted');
 const target = counter.textContent;
 const isNumber = !isNaN(target.replace('+', '').replace('%', ''));
 
