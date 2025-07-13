@@ -18,6 +18,7 @@
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#vision">Vision</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#carburant">Déclaration Carburant</a></li>
                         <li><a href="#apropos">À propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -39,6 +40,7 @@
                         <li><a href="#accueil" class="mobile-link">Accueil</a></li>
                         <li><a href="#vision" class="mobile-link">Vision</a></li>
                         <li><a href="#services" class="mobile-link">Services</a></li>
+                        <li><a href="#carburant" class="mobile-link">Déclaration Carburant</a></li>
                         <li><a href="#apropos" class="mobile-link">À propos</a></li>
                         <li><a href="#contact" class="mobile-link">Contact</a></li>
                     </ul>
@@ -58,8 +60,9 @@
                                 Transitaire Officiel Agréé N° 000272
                             </div>
                             <h1>Transit Douane et Fret de la RDC Groupe</h1>
-                            <p>Leader incontesté du dédouanement, transport et logistique en République Démocratique du
-                                Congo. Plus de 15 ans d'expertise au service de votre réussite commerciale.</p>
+                            <p>Leader incontesté du dédouanement, du transport, de la logistique et de la déclaration
+                                de carburant en République Démocratique du Congo. Plus de 15 ans d'expertise au service
+                                de votre réussite commerciale.</p>
 
                             <div class="hero-actions">
                                 <a href="#services" class="btn btn-primary">
@@ -356,6 +359,25 @@
             </div>
         </section>
 
+        <!-- Promotion Déclaration Carburant -->
+        <section id="carburant" class="section animate-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i class="fas fa-gas-pump"></i>
+                        Déclaration Carburant
+                    </div>
+                    <h2 class="section-title">Simplifiez vos démarches</h2>
+                    <p class="section-subtitle">
+                        NCA vous assiste pour déclarer vos stocks et mouvements de carburant en toute conformité. Gagnez du temps et sécurisez vos opérations grâce à notre expertise.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-file-signature"></i>
+                        Demander votre déclaration
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <!-- À propos / Partenaires -->
         <section id="apropos" class="section animate-on-scroll">
