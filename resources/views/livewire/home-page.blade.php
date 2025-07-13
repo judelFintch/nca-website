@@ -69,10 +69,6 @@
                                     <i class="fas fa-rocket"></i>
                                     Découvrir nos services
                                 </a>
-                                <button class="btn btn-outline" onclick="openCalculator()">
-                                    <i class="fas fa-calculator"></i>
-                                    Calculer un devis
-                                </button>
                             </div>
 
                             <div class="hero-stats">
@@ -1362,129 +1358,7 @@
             </button>
         </div>
 
-        <!-- Calculateur de Devis Modal -->
-        <div class="calculator-modal" id="calculator-modal">
-            <div class="calculator-content">
-                <div class="calculator-header">
-                    <button class="calculator-close" id="calculator-close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <h2><i class="fas fa-calculator"></i> Calculateur de Devis Automatique</h2>
-                    <p>Obtenez un devis personnalisé en quelques clics</p>
-                </div>
 
-                <div class="calculator-body">
-                    <!-- Étape 1: Type de service -->
-                    <div class="calc-step active" id="step-1">
-                        <h3><i class="fas fa-clipboard-list"></i> 1. Quel service vous intéresse ?</h3>
-                        <div class="calc-options">
-                            <div class="calc-option" data-service="douane" data-price="150">
-                                <div class="calc-option-icon"><i class="fas fa-file-invoice"></i></div>
-                                <div class="calc-option-title">Dédouanement</div>
-                                <div class="calc-option-desc">À partir de 150 USD</div>
-                            </div>
-                            <div class="calc-option" data-service="transport" data-price="200">
-                                <div class="calc-option-icon"><i class="fas fa-truck"></i></div>
-                                <div class="calc-option-title">Transport</div>
-                                <div class="calc-option-desc">À partir de 200 USD</div>
-                            </div>
-                            <div class="calc-option" data-service="entreposage" data-price="100">
-                                <div class="calc-option-icon"><i class="fas fa-warehouse"></i></div>
-                                <div class="calc-option-title">Entreposage</div>
-                                <div class="calc-option-desc">À partir de 100 USD/mois</div>
-                            </div>
-                            <div class="calc-option" data-service="hydrocarbures" data-price="300">
-                                <div class="calc-option-icon"><i class="fas fa-oil-can"></i></div>
-                                <div class="calc-option-title">Hydrocarbures</div>
-                                <div class="calc-option-desc">À partir de 300 USD</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Étape 2: Détails -->
-                    <div class="calc-step" id="step-2">
-                        <h3><i class="fas fa-info-circle"></i> 2. Détails de votre expédition</h3>
-                        <div class="calc-input-group">
-                            <input type="number" class="calc-input" id="calc-weight" placeholder="Poids (kg)">
-                            <input type="number" class="calc-input" id="calc-volume" placeholder="Volume (m³)">
-                        </div>
-                        <div class="calc-input-group">
-                            <select class="calc-input" id="calc-origin">
-                                <option value="">Ville d'origine</option>
-                                <option value="kinshasa">Kinshasa</option>
-                                <option value="lubumbashi">Lubumbashi</option>
-                                <option value="goma">Goma</option>
-                                <option value="bukavu">Bukavu</option>
-                                <option value="kisangani">Kisangani</option>
-                                <option value="autre">Autre ville</option>
-                            </select>
-                            <select class="calc-input" id="calc-destination">
-                                <option value="">Destination</option>
-                                <option value="kinshasa">Kinshasa</option>
-                                <option value="lubumbashi">Lubumbashi</option>
-                                <option value="goma">Goma</option>
-                                <option value="bukavu">Bukavu</option>
-                                <option value="kisangani">Kisangani</option>
-                                <option value="international">International</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Étape 3: Options -->
-                    <div class="calc-step" id="step-3">
-                        <h3><i class="fas fa-cog"></i> 3. Options supplémentaires</h3>
-                        <div class="calc-options">
-                            <div class="calc-option" data-option="urgent" data-extra="50">
-                                <div class="calc-option-icon"><i class="fas fa-bolt"></i></div>
-                                <div class="calc-option-title">Service Express</div>
-                                <div class="calc-option-desc">+50 USD</div>
-                            </div>
-                            <div class="calc-option" data-option="assurance" data-extra="30">
-                                <div class="calc-option-icon"><i class="fas fa-shield-alt"></i></div>
-                                <div class="calc-option-title">Assurance Premium</div>
-                                <div class="calc-option-desc">+30 USD</div>
-                            </div>
-                            <div class="calc-option" data-option="emballage" data-extra="25">
-                                <div class="calc-option-icon"><i class="fas fa-box"></i></div>
-                                <div class="calc-option-title">Emballage Sécurisé</div>
-                                <div class="calc-option-desc">+25 USD</div>
-                            </div>
-                            <div class="calc-option" data-option="suivi" data-extra="20">
-                                <div class="calc-option-icon"><i class="fas fa-satellite-dish"></i></div>
-                                <div class="calc-option-title">Suivi GPS</div>
-                                <div class="calc-option-desc">+20 USD</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Étape 4: Résultat -->
-                    <div class="calc-step" id="step-4">
-                        <h3><i class="fas fa-file-invoice-dollar"></i> 4. Votre devis personnalisé</h3>
-                        <div class="calc-result">
-                            <div class="result-price" id="final-price">0 USD</div>
-                            <p>Devis estimatif - Valable 30 jours</p>
-                            <div style="margin-top: 1.5rem;">
-                                <button class="btn btn-primary" id="send-quote">
-                                    <i class="fas fa-envelope"></i>
-                                    Recevoir le devis détaillé
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="calc-nav">
-                        <button class="btn btn-outline" id="calc-prev" style="display: none;">
-                            <i class="fas fa-arrow-left"></i>
-                            Précédent
-                        </button>
-                        <button class="btn btn-primary" id="calc-next">
-                            Suivant
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Prise de RDV Modal -->
         <div class="rdv-modal" id="rdv-modal">
