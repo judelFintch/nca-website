@@ -356,33 +356,6 @@
             </div>
         </section>
 
-        <!-- Stats Section -->
-        <section class="stats-section animate-on-scroll">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Années d'expérience</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Clients actifs</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">12</span>
-                        <span class="stat-label">Villes couvertes</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">5000+</span>
-                        <span class="stat-label">Opérations/an</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">99%</span>
-                        <span class="stat-label">Satisfaction client</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- À propos / Partenaires -->
         <section id="apropos" class="section animate-on-scroll">
