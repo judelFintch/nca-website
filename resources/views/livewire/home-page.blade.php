@@ -11,7 +11,7 @@
     @livewire('faq')
     @livewire('contact')
     @livewire('footer')
-    @livewire('chatbot')
-    @livewire('whatsapp')
-    @livewire('rdv-modal')
+    {{-- @livewire('chatbot') --}}
+    {{-- @livewire('whatsapp') --}}
+    {{-- @livewire('rdv-modal') --}}
 </div>
