@@ -29,6 +29,16 @@ showSlide(currentSlide);
 document.getElementById('next-slide').addEventListener('click', nextSlide);
 document.getElementById('prev-slide').addEventListener('click', prevSlide);
 
+// Navigation clavier
+document.addEventListener('keydown', (e) => {
+    if (['ArrowRight', 'ArrowLeft'].includes(e.key)) {
+        const tag = document.activeElement.tagName;
+        if (tag !== 'INPUT' && tag !== 'TEXTAREA') {
+            e.key === 'ArrowRight' ? nextSlide() : prevSlide();
+        }
+    }
+});
+
 // Navigation par points
 dots.forEach((dot, index) => {
 dot.addEventListener('click', () => {
