@@ -12,7 +12,6 @@ let m=0;const Y=document.querySelectorAll(".hero-slide"),Q=document.querySelecto
 • Gestion hydrocarbures
 
 Sur quoi puis-je vous renseigner ?`,contact:`Vous pouvez nous contacter :
-📞 (+243) 82 126 41 88
 📞 (+243) 84 45 47 797
 📍 Avenue Kasavubu, 24 Lubumbashi
 💬 WhatsApp disponible

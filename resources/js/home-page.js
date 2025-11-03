@@ -563,7 +563,7 @@ let chatbotResponses = {
 'devis': 'Pour un devis personnalisé, je peux vous orienter vers notre calculateur automatique ou vous pouvez remplir notre formulaire de contact. Quel service vous intéresse ?',
 'tracking': 'Pour suivre votre colis, veuillez me communiquer votre numéro de suivi. Il commence généralement par "NCA" suivi de 8 chiffres.',
 'services': 'Nos services principaux sont :\n• Dédouanement expert\n• Transport multimodal\n• Entreposage sécurisé\n• Gestion hydrocarbures\n\nSur quoi puis-je vous renseigner ?',
-'contact': 'Vous pouvez nous contacter :\n📞 (+243) 82 126 41 88\n📞 (+243) 84 45 47 797\n📍 Avenue Kasavubu, 24 Lubumbashi\n💬 WhatsApp disponible\n\nOu prendre RDV directement !',
+'contact': 'Vous pouvez nous contacter :\n📞 (+243) 84 45 47 797\n📍 Avenue Kasavubu, 24 Lubumbashi\n💬 WhatsApp disponible\n\nOu prendre RDV directement !',
 'tarifs': 'Nos tarifs dépendent de plusieurs facteurs : poids, volume, destination, urgence. Utilisez notre calculateur pour une estimation immédiate !',
 'delais': 'Nos délais standard :\n• Dédouanement : 24-48h\n• Transport national : 2-5 jours\n• Service express disponible\n\nVoulez-vous plus de détails ?',
 'horaires': 'Nos horaires :\n🕒 Lun-Ven : 8h-17h\n🕒 Samedi : 8h-12h\n🚨 Support urgence : 24h/7j\n\nNous sommes actuellement en ligne !',

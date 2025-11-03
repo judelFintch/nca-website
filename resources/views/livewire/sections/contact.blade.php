@@ -39,9 +39,6 @@
                                 <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900);">
                                     Téléphones</h4>
                                 <p style="color: var(--gray-600); margin: 0; line-height: 1.6;">
-                                    <a href="tel:+24382126418"
-                                        style="color: var(--primary-600); text-decoration: none; font-weight: 600;">(+243)
-                                        82 126 41 88</a><br>
                                     <a href="tel:+24384454797"
                                         style="color: var(--primary-600); text-decoration: none; font-weight: 600;">(+243)
                                         84 45 47 797</a>
