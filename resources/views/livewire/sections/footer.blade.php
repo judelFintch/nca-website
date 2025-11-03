@@ -64,9 +64,6 @@
                             <li>Avenue Kasavubu, 24</li>
                             <li>Lubumbashi, Haut Katanga</li>
                             <li>République Démocratique du Congo</li>
-                            <li style="margin-top: 1rem;">
-                                <a href="tel:+24382126418">(+243) 82 126 41 88</a>
-                            </li>
                             <li>
                                 <a href="tel:+24384454797">(+243) 84 45 47 797</a>
                             </li>
