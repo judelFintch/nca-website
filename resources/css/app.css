@@ -73,8 +73,8 @@ html {
 body {
     font-family: 'Manrope', 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #111827;
-    background-color: #ffffff;
+    color: #0f172a;
+    background-color: #f1f5f9;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-x: hidden;
 }
@@ -790,11 +790,11 @@ body {
 .section {
     padding: 5.5rem 0;
     position: relative;
-    background: linear-gradient(135deg, var(--gray-50) 0%, var(--primary-50) 100%);
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
 }
 
 .section-alt {
-    background: linear-gradient(135deg, var(--gray-50) 0%, var(--primary-50) 100%);
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
     border-top: 1px solid rgba(11, 79, 163, 0.06);
     border-bottom: 1px solid rgba(11, 79, 163, 0.06);
 }
