@@ -3,9 +3,9 @@
         <div class="section-header">
             <div class="section-badge">
                 <i class="fas fa-user-tie"></i>
-                Direction générale
+                Présidence
             </div>
-            <h2 class="section-title">Le mot du Directeur Général</h2>
+            <h2 class="section-title">Le mot du Président‑Directeur Général</h2>
             <p class="section-subtitle">
                 Une direction engagée pour une logistique fiable, conforme et orientée résultats.
             </p>
@@ -17,15 +17,15 @@
             </div>
             <div class="director-content">
                 <h3 class="director-name">Patrick Djamba</h3>
-                <p class="director-role">Directeur Général — New Custom Agency</p>
+                <p class="director-role">Président‑Directeur Général — New Custom Agency</p>
                 <p class="director-bio">
-                    Fort de plus de 15 ans d'expérience en douane et logistique, Patrick Djamba pilote la stratégie
-                    de NCA avec une ambition claire : offrir un service rigoureux, transparent et performant à
-                    chaque client. Il place la conformité au cœur des opérations et s'appuie sur une équipe locale
-                    engagée pour garantir des délais maîtrisés et un suivi de qualité.
+                    Chez NCA, nous transformons chaque défi douanier en opportunité de croissance. Notre ambition est
+                    claire : porter plus haut le commerce congolais grâce à une exécution rigoureuse, un service
+                    réactif et une relation client durable. Avec une équipe engagée, nous avançons avec audace,
+                    discipline et confiance.
                 </p>
                 <div class="director-quote">
-                    « Notre priorité est simple : sécuriser vos flux et tenir nos engagements, partout en RDC. »
+                    « Notre réussite se mesure à la vôtre : avancer ensemble, plus vite, plus loin. »
                 </div>
             </div>
         </div>

@@ -12,8 +12,8 @@
                             </div>
                         </div>
                         <p class="footer-text">
-                            NewCustoms Agency est un leader en douane, logistique et entreposage en RDC. Nous simplifions
-                            vos démarches, facilitons vos opérations internationales et assurons un service conforme et fiable.
+                            NewCustoms Agency simplifie vos démarches douanières, facilite vos opérations internationales
+                            et vous accompagne avec rigueur, réactivité et transparence.
                         </p>
                         <div class="social-links">
                             <a href="#" class="social-link" aria-label="Facebook">

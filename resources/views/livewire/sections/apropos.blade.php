@@ -7,7 +7,7 @@
             </div>
             <h2 class="section-title">Ils Nous Font Confiance</h2>
             <p class="section-subtitle">
-                Des partenaires exigeants qui nous confient leurs flux stratégiques partout en RDC.
+                Des partenaires exigeants qui nous confient leurs flux stratégiques.
             </p>
         </div>
 

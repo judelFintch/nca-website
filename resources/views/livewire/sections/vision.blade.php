@@ -7,7 +7,7 @@
             </div>
             <h2 class="section-title">Notre Engagement</h2>
             <p class="section-subtitle">
-                Notre engagement : excellence du service, intégrité et conformité à chaque étape.
+                Notre engagement : excellence du service, intégrité et performance opérationnelle.
             </p>
         </div>
 

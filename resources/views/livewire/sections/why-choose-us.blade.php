@@ -7,7 +7,7 @@
             </div>
             <h2 class="section-title">Un partenaire qui sécurise vos flux</h2>
             <p class="section-subtitle">
-                Une expertise reconnue et un engagement d'excellence pour sécuriser vos flux en RDC.
+                Une méthode claire, une communication transparente et une exécution fiable.
             </p>
         </div>
 
@@ -19,13 +19,13 @@
             </div>
             <div class="value-card">
                 <div class="value-icon"><i class="fas fa-stopwatch"></i></div>
-                <h3>Délais maîtrisés</h3>
-                <p>Procédures simplifiées pour accélérer vos opérations et éviter les blocages.</p>
+                <h3>Exécution efficace</h3>
+                <p>Procédures simplifiées pour fluidifier vos opérations et limiter les blocages.</p>
             </div>
             <div class="value-card">
                 <div class="value-icon"><i class="fas fa-network-wired"></i></div>
-                <h3>Réseau local solide</h3>
-                <p>Une couverture nationale et des partenaires fiables pour des opérations fluides.</p>
+                <h3>Réseau solide</h3>
+                <p>Des partenaires fiables et une coordination terrain maîtrisée.</p>
             </div>
             <div class="value-card">
                 <div class="value-icon"><i class="fas fa-user-check"></i></div>

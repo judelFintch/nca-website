@@ -7,7 +7,7 @@
             </div>
             <h2 class="section-title">Un aperçu de nos opérations</h2>
             <p class="section-subtitle">
-                Des images de nos équipes, bureaux, entrepôts et opérations terrain qui illustrent notre présence partout en RDC.
+                Des images de nos équipes, bureaux, entrepôts et opérations terrain qui illustrent notre présence et notre méthode.
             </p>
         </div>
 
