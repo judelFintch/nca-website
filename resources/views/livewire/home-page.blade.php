@@ -7,7 +7,6 @@
     @livewire('services')
     @livewire('carburant')
     @livewire('apropos')
-    @livewire('faq')
     @livewire('contact')
     @livewire('footer')
     {{-- @livewire('chatbot') --}}
