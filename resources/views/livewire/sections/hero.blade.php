@@ -12,9 +12,9 @@
           <i class="fas fa-rocket"></i>
           Demander un devis gratuit
         </a>
-        <a href="#contact" class="btn btn-outline">
-          <i class="fas fa-phone"></i>
+        <a href="#contact" class="hero-link">
           Parler à un expert
+          <i class="fas fa-arrow-right"></i>
         </a>
       </div>
       <div class="hero-simple-meta">

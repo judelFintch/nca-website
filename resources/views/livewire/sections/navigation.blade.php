@@ -25,6 +25,10 @@
         <i class="fas fa-phone"></i>
         +243 84 45 47 797
       </a>
+      <a href="https://wa.me/24384454797" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+      </a>
       <a href="#contact" class="btn btn-primary">Demander un devis</a>
       <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Ouvrir le menu">
         <i class="fas fa-bars"></i>
@@ -40,6 +44,7 @@
       <li><a href="#carburant">Déclaration Carburant</a></li>
       <li><a href="#apropos">Partenaires</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="https://wa.me/24384454797" class="btn btn-whatsapp mobile-cta">WhatsApp</a></li>
       <li><a href="#contact" class="btn btn-primary mobile-cta">Demander un devis</a></li>
     </ul>
   </div>

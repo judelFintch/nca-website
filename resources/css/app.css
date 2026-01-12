@@ -204,6 +204,20 @@ body {
     gap: 1.25rem;
 }
 
+.btn-whatsapp {
+    background: #25D366;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 0.65rem 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 10px 18px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 22px rgba(37, 211, 102, 0.3);
+}
+
 .nav-phone {
     display: inline-flex;
     align-items: center;
@@ -335,6 +349,19 @@ body {
     flex-wrap: wrap;
     gap: 1rem;
     margin: 2rem 0 1.5rem;
+}
+
+.hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0b4fa3;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-link i {
+    font-size: 0.85rem;
 }
 
 .hero-simple-meta {
