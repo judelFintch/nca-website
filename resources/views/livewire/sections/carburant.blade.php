@@ -1,4 +1,4 @@
-<section id="carburant" class="section animate-on-scroll">
+<section id="carburant" class="section section-alt animate-on-scroll">
     <div class="container">
         <div class="callout-grid">
             <div>
@@ -6,17 +6,22 @@
                     <i class="fas fa-gas-pump"></i>
                     Déclaration Carburant
                 </div>
-                <h2 class="section-title">Déclarez vos carburants en toute sérénité</h2>
+                <h2 class="section-title">Déclaration carburant rapide & conforme</h2>
                 <p class="section-subtitle">
-                    Nous sécurisons la conformité des stocks et mouvements de carburant, tout en réduisant vos délais
-                    administratifs.
+                    Dossiers réglementaires, suivi des volumes et interface avec les autorités. Un process clair pour
+                    éviter les blocages.
                 </p>
+                <div class="callout-highlights">
+                    <span>Délais maîtrisés</span>
+                    <span>Conformité 100%</span>
+                    <span>Reporting mensuel</span>
+                </div>
                 <div class="callout-actions">
                     <a href="#contact" class="btn btn-primary">
                         <i class="fas fa-file-signature"></i>
-                        Demander votre déclaration
+                        Demander une déclaration
                     </a>
-                    <a href="#contact" class="btn btn-outline">Parler à un expert</a>
+                    <a href="#contact" class="text-link">Parler à un expert <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="callout-card">

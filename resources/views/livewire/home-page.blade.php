@@ -7,8 +7,6 @@
     @livewire('services')
     @livewire('carburant')
     @livewire('apropos')
-    @livewire('gallery')
-    @livewire('testimonials')
     @livewire('faq')
     @livewire('contact')
     @livewire('footer')

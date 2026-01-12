@@ -1,13 +1,12 @@
-<section id="accueil" class="hero hero-simple">
-  <div class="container hero-simple-grid">
-    <div class="hero-simple-copy">
-      <div class="hero-simple-kicker">Transitaire Officiel Agréé N° 000272</div>
-      <h1 class="hero-simple-title">New Custom Agency, votre partenaire transit RDC.</h1>
-      <p class="hero-simple-lead">
-        Nous accompagnons les entreprises dans le dédouanement, le transport et la logistique en RDC. Une équipe locale,
-        une conformité rigoureuse et un suivi transparent pour sécuriser chaque opération.
+<section id="accueil" class="hero hero-impact">
+  <div class="container hero-impact-grid">
+    <div class="hero-impact-copy">
+      <div class="hero-impact-kicker">Transitaire officiel de la République Démocratique du Congo</div>
+      <h1 class="hero-impact-title">Transit RDC, vitesse & conformité.</h1>
+      <p class="hero-impact-lead">
+        Dédouanement, transport et logistique pilotés par une équipe locale, avec des délais maîtrisés et un suivi clair.
       </p>
-      <div class="hero-simple-actions">
+      <div class="hero-impact-actions">
         <a href="#services" class="btn btn-primary">
           <i class="fas fa-rocket"></i>
           Demander un devis gratuit
@@ -17,14 +16,30 @@
           <i class="fas fa-arrow-right"></i>
         </a>
       </div>
-      <div class="hero-simple-meta">
+      <div class="hero-impact-badges">
         <span>15+ ans d'expérience</span>
         <span>500+ clients actifs</span>
         <span>Support 24/7</span>
       </div>
     </div>
-    <div class="hero-simple-image">
-      <img src="{{ asset('images/logo.jpeg') }}" alt="Logo NCA" />
+    <div class="hero-impact-visual">
+      <div class="hero-impact-frame">
+        <img src="{{ asset('images/1.webp') }}" alt="NCA opérations terrain" />
+      </div>
+      <div class="hero-impact-card">
+        <div>
+          <span class="hero-impact-label">Dédouanement</span>
+          <span class="hero-impact-value">24-48h</span>
+        </div>
+        <div>
+          <span class="hero-impact-label">Conformité</span>
+          <span class="hero-impact-value">100%</span>
+        </div>
+        <div>
+          <span class="hero-impact-label">Couverture</span>
+          <span class="hero-impact-value">RDC</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>

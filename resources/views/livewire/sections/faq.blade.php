@@ -1,4 +1,4 @@
-<section id="faq" class="section bg-gray-50 animate-on-scroll">
+<section id="faq" class="section section-alt animate-on-scroll">
             <div class="container">
                 <div class="section-header">
                     <div class="section-badge">
@@ -7,7 +7,7 @@
                     </div>
                     <h2 class="section-title">Questions Fréquentes</h2>
                     <p class="section-subtitle">
-                        Trouvez rapidement les réponses à vos questions sur nos services logistiques
+                        Réponses rapides aux questions les plus courantes.
                     </p>
                 </div>
 

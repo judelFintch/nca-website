@@ -1,4 +1,4 @@
-<section class="section animate-on-scroll">
+<section class="section section-alt animate-on-scroll">
   <div class="container">
     <div class="section-header">
       <div class="section-badge">
@@ -6,14 +6,14 @@
         Notre méthode
       </div>
       <h2 class="section-title">Un process clair en 3 étapes</h2>
-      <p class="section-subtitle">Simple, transparent et piloté pour avancer sans frictions.</p>
+      <p class="section-subtitle">Un cadre simple pour sécuriser vos opérations et tenir les délais.</p>
     </div>
 
     <div class="process-grid">
       <div class="process-card">
         <div class="process-index">1</div>
         <h4>Qualification</h4>
-        <p>Analyse du dossier et cadrage des délais dès le premier échange.</p>
+        <p>Analyse du dossier et cadrage des priorités dès le premier échange.</p>
       </div>
       <div class="process-card">
         <div class="process-index">2</div>

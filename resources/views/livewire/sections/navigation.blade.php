@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav id="navbar" class="nav-bar">
+<nav id="navbar" class="nav-bar nav-polished">
   <div class="container nav-inner">
     <a href="#accueil" class="brand">
       <div class="brand-mark">
@@ -11,22 +11,25 @@
       </div>
     </a>
 
-    <ul class="nav-links">
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#vision">Vision</a></li>
-      <li><a href="#services">Services</a></li>
-      <li class="nav-dropdown">
-        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">
-          Plus
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <ul class="nav-dropdown-menu">
-          <li><a href="#carburant">Déclaration Carburant</a></li>
-          <li><a href="#apropos">Partenaires</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </li>
-    </ul>
+    <div class="nav-center">
+      <ul class="nav-links nav-links-pill">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#services">Services</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">
+            Plus
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#carburant">Déclaration Carburant</a></li>
+            <li><a href="#apropos">Partenaires</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
     <div class="nav-actions">
       <a href="tel:+24384454797" class="nav-phone">
@@ -51,6 +54,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#carburant">Déclaration Carburant</a></li>
       <li><a href="#apropos">Partenaires</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://wa.me/24384454797" class="btn btn-whatsapp mobile-cta">WhatsApp</a></li>
       <li><a href="#contact" class="btn btn-primary mobile-cta">Demander un devis</a></li>

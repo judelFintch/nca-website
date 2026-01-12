@@ -252,129 +252,6 @@ document.body.style.opacity = '1';
 // Initialisation
 showSlide(0);
 
-// === NOUVELLES FONCTIONNALITÉS PREMIUM ===
-
-// 1. GALERIE PHOTOS avec Lightbox
-const galleryItems = document.querySelectorAll('.gallery-item');
-let lightbox = null;
-
-// Créer le lightbox
-function createLightbox() {
-lightbox = document.createElement('div');
-lightbox.className = 'lightbox';
-lightbox.innerHTML = `
-<div class="lightbox-content">
-<button class="lightbox-close">
-    <i class="fas fa-times"></i>
-</button>
-<div id="lightbox-image"></div>
-</div>
-`;
-document.body.appendChild(lightbox);
-
-lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-if (e.target === lightbox) closeLightbox();
-});
-}
-
-function openLightbox(imageData) {
-if (!lightbox) createLightbox();
-
-const lightboxImage = lightbox.querySelector('#lightbox-image');
-const galleryItem = document.querySelector(`[data-image="${imageData}"]`);
-const svg = galleryItem.querySelector('svg').cloneNode(true);
-svg.style.width = '100%';
-svg.style.height = 'auto';
-svg.style.maxWidth = '800px';
-svg.style.maxHeight = '600px';
-
-lightboxImage.innerHTML = '';
-lightboxImage.appendChild(svg);
-
-lightbox.classList.add('active');
-document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox() {
-if (lightbox) {
-lightbox.classList.remove('active');
-document.body.style.overflow = '';
-}
-}
-
-galleryItems.forEach(item => {
-item.addEventListener('click', () => {
-const imageData = item.dataset.image;
-openLightbox(imageData);
-});
-});
-
-// Support clavier pour lightbox
-document.addEventListener('keydown', (e) => {
-if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
-closeLightbox();
-}
-});
-
-// 2. TÉMOIGNAGES CAROUSEL
-let currentTestimonial = 0;
-const testimonialsTrack = document.getElementById('testimonials-track');
-const testimonialDots = document.querySelectorAll('.testimonial-dot');
-const totalTestimonials = testimonialDots.length;
-
-function showTestimonial(index) {
-if (testimonialsTrack) {
-testimonialsTrack.style.transform = `translateX(-${index * 100}%)`;
-
-testimonialDots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-});
-}
-}
-
-function nextTestimonial() {
-currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
-showTestimonial(currentTestimonial);
-}
-
-// Navigation témoignages
-testimonialDots.forEach((dot, index) => {
-dot.addEventListener('click', () => {
-currentTestimonial = index;
-showTestimonial(currentTestimonial);
-});
-});
-
-// Auto-avancement témoignages
-setInterval(nextTestimonial, 8000);
-
-// Prev / Next controls for testimonials
-const testimonialPrev = document.getElementById('testimonial-prev');
-const testimonialNext = document.getElementById('testimonial-next');
-
-if (testimonialPrev) {
-    testimonialPrev.addEventListener('click', () => {
-        currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
-        showTestimonial(currentTestimonial);
-    });
-}
-
-if (testimonialNext) {
-    testimonialNext.addEventListener('click', () => {
-        nextTestimonial();
-    });
-}
-
-// Initialise first testimonial
-showTestimonial(0);
-
-// 3. BLOG - Animation des cartes
-const blogCards = document.querySelectorAll('.blog-card');
-blogCards.forEach((card, index) => {
-card.style.animationDelay = `${index * 0.2}s`;
-});
-
 // 4. FAQ INTERACTIVE
 const faqSearch = document.getElementById('faq-search');
 const faqItems = document.querySelectorAll('.faq-item');
@@ -453,50 +330,6 @@ faqItem.classList.toggle('active', !isActive);
 });
 });
 
-// Animation d'apparition des éléments de la galerie
-const galleryObserver = new IntersectionObserver((entries) => {
-entries.forEach((entry, index) => {
-if (entry.isIntersecting) {
-    setTimeout(() => {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0) scale(1)';
-    }, index * 100);
-    galleryObserver.unobserve(entry.target);
-}
-});
-}, {
-threshold: 0.1
-});
-
-galleryItems.forEach(item => {
-item.style.opacity = '0';
-item.style.transform = 'translateY(30px) scale(0.9)';
-item.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-galleryObserver.observe(item);
-});
-
-// Animation des articles de blog
-const blogObserver = new IntersectionObserver((entries) => {
-entries.forEach((entry, index) => {
-if (entry.isIntersecting) {
-    setTimeout(() => {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-    }, index * 150);
-    blogObserver.unobserve(entry.target);
-}
-});
-}, {
-threshold: 0.1
-});
-
-blogCards.forEach(card => {
-card.style.opacity = '0';
-card.style.transform = 'translateY(40px)';
-card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-blogObserver.observe(card);
-});
-
 // Animation des FAQs
 const faqObserver = new IntersectionObserver((entries) => {
 entries.forEach((entry, index) => {
@@ -537,23 +370,6 @@ link.addEventListener('click', function(e) {
     }
 });
 }
-});
-
-// Performance: Lazy loading pour les SVG complexes
-const lazyElements = document.querySelectorAll('.gallery-item svg, .blog-image svg');
-const lazyObserver = new IntersectionObserver((entries) => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-    entry.target.style.opacity = '1';
-    lazyObserver.unobserve(entry.target);
-}
-});
-});
-
-lazyElements.forEach(element => {
-element.style.opacity = '0';
-element.style.transition = 'opacity 0.3s ease';
-lazyObserver.observe(element);
 });
 
 console.log('🚀 New Custom Agency - Toutes les fonctionnalités premium chargées avec succès !');

@@ -1,19 +1,17 @@
-        <footer class="footer">
+        <footer class="footer footer-nca">
             <div class="container">
                 <div class="footer-grid">
                     <div>
-                        <div class="logo" style="color: white; margin-bottom: 1.5rem; font-size: 1.3rem;">
-                            <div class="logo-container">
-                                <div class="logo-icon" style="background: white; color: var(--nca-blue-700);">NCA
-                                </div>
-                                <div class="logo-text">
-                                    <span class="logo-main" style="color: white;">New Custom Agency</span>
-                                    <span class="logo-subtitle" style="color: #93c5fd;">Transit Douane et Fret
-                                        RDC</span>
-                                </div>
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <img src="{{ asset('images/logo.jpeg') }}" alt="NCA">
+                            </div>
+                            <div class="footer-brand-text">
+                                <span class="footer-brand-title">New Custom Agency</span>
+                                <span class="footer-brand-subtitle">Transit Douane et Fret RDC</span>
                             </div>
                         </div>
-                        <p style="margin-bottom: 2rem; line-height: 1.7; max-width: 400px;">
+                        <p class="footer-text">
                             Transit Douane et Fret de la RDC Groupe - Leader incontesté de la logistique en République
                             Démocratique du Congo.
                             Votre partenaire de confiance depuis plus de 15 ans.
@@ -25,10 +23,10 @@
                             <a href="#" class="social-link" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="#" class="social-link" aria-label="WhatsApp">
+                            <a href="https://wa.me/24384454797" class="social-link" aria-label="WhatsApp">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
-                            <a href="#" class="social-link" aria-label="Email">
+                            <a href="mailto:contact@newcustomagency.cd" class="social-link" aria-label="Email">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
@@ -37,12 +35,10 @@
                     <div>
                         <h3>Nos Services</h3>
                         <ul>
-                            <li><a href="#services">Dédouanement Expert</a></li>
+                            <li><a href="#services">Dédouanement</a></li>
                             <li><a href="#services">Transport Multimodal</a></li>
-                            <li><a href="#services">Entreposage Sécurisé</a></li>
-                            <li><a href="#services">Gestion Hydrocarbures</a></li>
-                            <li><a href="#services">Conseil Logistique</a></li>
-                            <li><a href="#services">Formation Douanière</a></li>
+                            <li><a href="#services">Entreposage</a></li>
+                            <li><a href="#services">Déclaration Carburant</a></li>
                         </ul>
                     </div>
 
@@ -52,9 +48,7 @@
                             <li><a href="#vision">Notre Vision</a></li>
                             <li><a href="#apropos">À Propos</a></li>
                             <li><a href="#apropos">Nos Partenaires</a></li>
-                            <li><a href="#contact">Carrières</a></li>
-                            <li><a href="#contact">Actualités</a></li>
-                            <li><a href="#contact">Témoignages</a></li>
+                            <li><a href="#contact">Nous Contacter</a></li>
                         </ul>
                     </div>
 
@@ -67,7 +61,7 @@
                             <li>
                                 <a href="tel:+24384454797">(+243) 84 45 47 797</a>
                             </li>
-                            <li style="margin-top: 1rem;">
+                            <li class="footer-contact-sep">
                                 <a href="mailto:contact@newcustomagency.cd">contact@newcustomagency.cd</a>
                             </li>
                         </ul>
@@ -75,8 +69,7 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <p>&copy; 2025 New Custom Agency. Tous droits réservés. | Transitaire Agréé N° 000272 | Mentions
-                        légales | Politique de confidentialité</p>
+                    <p>&copy; 2025 New Custom Agency. Tous droits réservés. Transitaire Agréé N° 000272.</p>
                 </div>
             </div>
         </footer>
