@@ -65,55 +65,7 @@
                     <div class="form-container">
                         <h3 style="margin-bottom: 2rem; color: var(--primary-600);">Demande de Devis Gratuit</h3>
 
-                        <form id="contact-form">
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label class="form-label">Nom complet *</label>
-                                    <input type="text" class="form-input" placeholder="Votre nom complet"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Email *</label>
-                                    <input type="email" class="form-input" placeholder="votre@email.com"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="form-grid">
-                                <div class="form-group">
-                                    <label class="form-label">Téléphone</label>
-                                    <input type="tel" class="form-input" placeholder="+243 XX XXX XX XX">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Service requis *</label>
-                                    <select class="form-input" required>
-                                        <option value="">Sélectionnez un service</option>
-                                        <option value="douane">Dédouanement</option>
-                                        <option value="transport">Transport Multimodal</option>
-                                        <option value="entreposage">Entreposage</option>
-                                        <option value="hydrocarbures">Gestion Hydrocarbures</option>
-                                        <option value="conseil">Conseil Logistique</option>
-                                        <option value="autre">Autre (préciser)</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Décrivez votre projet *</label>
-                                <textarea class="form-input form-textarea"
-                                    placeholder="Décrivez en détail vos besoins logistiques, volumes, destinations, délais..." required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                <i class="fas fa-paper-plane"></i>
-                                Envoyer ma demande
-                            </button>
-
-                            <p
-                                style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--gray-500);">
-                                Réponse garantie sous 24h • Devis gratuit et sans engagement
-                            </p>
-                        </form>
+                        @livewire('contact-form')
                     </div>
                 </div>
             </div>

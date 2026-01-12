@@ -25,9 +25,14 @@ currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
 showSlide(currentSlide);
 }
 
+const sliderNext = document.getElementById('next-slide');
+const sliderPrev = document.getElementById('prev-slide');
+const hasSlider = slides.length > 0 && sliderNext && sliderPrev;
+
+if (hasSlider) {
 // Event listeners du slider
-document.getElementById('next-slide').addEventListener('click', nextSlide);
-document.getElementById('prev-slide').addEventListener('click', prevSlide);
+sliderNext.addEventListener('click', nextSlide);
+sliderPrev.addEventListener('click', prevSlide);
 
 // Navigation clavier
 document.addEventListener('keydown', (e) => {
@@ -52,13 +57,16 @@ let sliderInterval = setInterval(nextSlide, 6000);
 
 // Pause du slider au survol
 const heroSection = document.querySelector('.hero');
-heroSection.addEventListener('mouseenter', () => {
-clearInterval(sliderInterval);
-});
+if (heroSection) {
+    heroSection.addEventListener('mouseenter', () => {
+    clearInterval(sliderInterval);
+    });
 
-heroSection.addEventListener('mouseleave', () => {
-sliderInterval = setInterval(nextSlide, 6000);
-});
+    heroSection.addEventListener('mouseleave', () => {
+    sliderInterval = setInterval(nextSlide, 6000);
+    });
+}
+}
 
 // Gestion du thème
 const themeToggle = document.getElementById('theme-toggle');
@@ -66,6 +74,7 @@ const html = document.documentElement;
 const lightIcon = document.querySelector('.light-icon');
 const darkIcon = document.querySelector('.dark-icon');
 
+if (themeToggle && lightIcon && darkIcon) {
 // Initialiser le thème
 const savedTheme = localStorage.getItem('theme') || 'light';
 if (savedTheme === 'dark') {
@@ -84,37 +93,44 @@ darkIcon.style.display = isDark ? 'block' : 'none';
 
 localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
+}
 
 // Menu mobile
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
-const mobileLinks = document.querySelectorAll('.mobile-link');
 
+if (mobileMenuBtn && mobileMenu) {
 mobileMenuBtn.addEventListener('click', () => {
-const isActive = mobileMenu.classList.contains('active');
-mobileMenu.classList.toggle('active');
-
-const icon = mobileMenuBtn.querySelector('i');
-icon.className = isActive ? 'fas fa-bars' : 'fas fa-times';
+    const isActive = mobileMenu.classList.toggle('active');
+    const icon = mobileMenuBtn.querySelector('i');
+    if (icon) {
+        icon.className = isActive ? 'fas fa-times' : 'fas fa-bars';
+    }
 });
 
 // Fermer le menu mobile lors du clic sur un lien
+const mobileLinks = mobileMenu.querySelectorAll('a');
 mobileLinks.forEach(link => {
-link.addEventListener('click', () => {
-mobileMenu.classList.remove('active');
-const icon = mobileMenuBtn.querySelector('i');
-icon.className = 'fas fa-bars';
-});
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+            icon.className = 'fas fa-bars';
+        }
+    });
 });
 
 // Fermer le menu mobile lors du clic à l'extérieur
 document.addEventListener('click', (e) => {
-if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-mobileMenu.classList.remove('active');
-const icon = mobileMenuBtn.querySelector('i');
-icon.className = 'fas fa-bars';
-}
+    if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+            icon.className = 'fas fa-bars';
+        }
+    }
 });
+}
 
 // Smooth scroll pour la navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -167,34 +183,8 @@ lastScrollY = currentScrollY;
 });
 
 // Gestion du formulaire
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-e.preventDefault();
-
-const submitBtn = this.querySelector('button[type="submit"]');
-const originalText = submitBtn.innerHTML;
-
-// Animation de soumission
-submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
-submitBtn.disabled = true;
-submitBtn.style.background = 'var(--gray-400)';
-
-// Simulation d'envoi
-setTimeout(() => {
-// Animation de succès
-submitBtn.innerHTML = '<i class="fas fa-check"></i> Message envoyé !';
-submitBtn.style.background = 'var(--success)';
-
-setTimeout(() => {
-    alert(
-        'Merci pour votre demande ! Notre équipe vous contactera dans les plus brefs délais.');
-    this.reset();
-    submitBtn.innerHTML = originalText;
-    submitBtn.disabled = false;
-    submitBtn.style.background = '';
-}, 1000);
-}, 2000);
-});
-
+// Le formulaire de contact est désormais géré côté serveur avec Livewire (voir app/Livewire/ContactForm)
+// Nous gardons l'UX via des événements dispatchBrowserEvent('contact:submitted') côté Livewire.
 // Compteurs animés
 function animateCounters() {
 const counters = document.querySelectorAll('.stat-number');
@@ -358,6 +348,26 @@ showTestimonial(currentTestimonial);
 
 // Auto-avancement témoignages
 setInterval(nextTestimonial, 8000);
+
+// Prev / Next controls for testimonials
+const testimonialPrev = document.getElementById('testimonial-prev');
+const testimonialNext = document.getElementById('testimonial-next');
+
+if (testimonialPrev) {
+    testimonialPrev.addEventListener('click', () => {
+        currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+        showTestimonial(currentTestimonial);
+    });
+}
+
+if (testimonialNext) {
+    testimonialNext.addEventListener('click', () => {
+        nextTestimonial();
+    });
+}
+
+// Initialise first testimonial
+showTestimonial(0);
 
 // 3. BLOG - Animation des cartes
 const blogCards = document.querySelectorAll('.blog-card');

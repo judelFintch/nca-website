@@ -2,106 +2,40 @@
     <div class="container">
         <div class="section-header">
             <div class="section-badge">
-                <i class="fas fa-cogs"></i>
-                Nos Expertises
+                <i class="fas fa-layer-group"></i>
+                Offre complète
             </div>
-            <h2 class="section-title">Services Professionnels</h2>
-            <p class="section-subtitle">
-                Des solutions complètes et innovantes pour tous vos besoins logistiques et douaniers
-            </p>
+            <h2 class="section-title">Des services logistiques intégrés</h2>
+            <p class="section-subtitle">Une chaîne complète, de la conformité douanière à la livraison finale, pensée pour réduire vos coûts et vos délais.</p>
         </div>
 
         <div class="services-grid">
-            <!-- Service 1: Dédouanement -->
             <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-file-invoice"></i>
-                </div>
-                <h3>Dédouanement Expert</h3>
-                <p>
-                    Service complet de dédouanement avec notre expertise reconnue et notre connaissance
-                    approfondie des procédures douanières congolaises.
-                </p>
-                <ul class="service-features">
-                    <li>Déclarations douanières complètes</li>
-                    <li>Gestion des documents d'importation/exportation</li>
-                    <li>Assistance réglementaire</li>
-                    <li>Suivi en temps réel</li>
-                    <li>Optimisation fiscale</li>
-                </ul>
-                <a href="#contact" class="btn btn-ghost">
-                    <i class="fas fa-arrow-right"></i>
-                    En savoir plus
-                </a>
+                <div class="service-icon"><i class="fas fa-ship"></i></div>
+                <h3>Dédouanement</h3>
+                <p>Formalités, déclarations et autorisations douanières sans blocage.</p>
+                <a href="#contact" class="btn btn-outline">En savoir plus</a>
             </div>
 
-            <!-- Service 2: Transport -->
             <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-truck-moving"></i>
-                </div>
-                <h3>Transport Multimodal</h3>
-                <p>
-                    Solutions de transport adaptées à tous types de marchandises sur l'ensemble du territoire
-                    congolais avec notre flotte moderne.
-                </p>
-                <ul class="service-features">
-                    <li>Transport routier, fluvial, aérien</li>
-                    <li>Charges complètes et groupage</li>
-                    <li>Couverture nationale</li>
-                    <li>Tracking GPS en temps réel</li>
-                    <li>Assurance marchandises</li>
-                </ul>
-                <a href="#contact" class="btn btn-ghost">
-                    <i class="fas fa-arrow-right"></i>
-                    En savoir plus
-                </a>
+                <div class="service-icon"><i class="fas fa-truck"></i></div>
+                <h3>Transport multimodal</h3>
+                <p>Routier, ferroviaire et maritime selon vos délais et budgets.</p>
+                <a href="#contact" class="btn btn-outline">En savoir plus</a>
             </div>
 
-            <!-- Service 3: Entreposage -->
             <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-warehouse"></i>
-                </div>
-                <h3>Entreposage Sécurisé</h3>
-                <p>
-                    Installations d'entreposage modernes et sécurisées avec gestion informatisée des stocks et
-                    services à valeur ajoutée.
-                </p>
-                <ul class="service-features">
-                    <li>Entrepôts climatisés et sécurisés</li>
-                    <li>Gestion des stocks informatisée</li>
-                    <li>Services de manutention</li>
-                    <li>Préparation de commandes</li>
-                    <li>Distribution last-mile</li>
-                </ul>
-                <a href="#contact" class="btn btn-ghost">
-                    <i class="fas fa-arrow-right"></i>
-                    En savoir plus
-                </a>
+                <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+                <h3>Entreposage sécurisé</h3>
+                <p>Stockage, inventaire et préparation de lots sous contrôle.</p>
+                <a href="#contact" class="btn btn-outline">En savoir plus</a>
             </div>
 
-            <!-- Service 4: Hydrocarbures -->
             <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-oil-can"></i>
-                </div>
-                <h3>Gestion Hydrocarbures</h3>
-                <p>
-                    Expertise spécialisée dans la gestion, déclaration et transport des produits pétroliers avec
-                    conformité réglementaire totale.
-                </p>
-                <ul class="service-features">
-                    <li>Déclarations carburant</li>
-                    <li>Transport spécialisé</li>
-                    <li>Conformité réglementaire</li>
-                    <li>Stockage sécurisé</li>
-                    <li>Assistance administrative</li>
-                </ul>
-                <a href="#contact" class="btn btn-ghost">
-                    <i class="fas fa-arrow-right"></i>
-                    En savoir plus
-                </a>
+                <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+                <h3>Déclaration carburant</h3>
+                <p>Conformité et reporting pour les produits pétroliers.</p>
+                <a href="#contact" class="btn btn-outline">En savoir plus</a>
             </div>
         </div>
     </div>

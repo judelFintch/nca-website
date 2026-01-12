@@ -1,3 +1,5 @@
+import '../css/tailwind.css';
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar scroll effect
