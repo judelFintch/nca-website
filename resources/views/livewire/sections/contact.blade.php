@@ -5,9 +5,9 @@
                         <i class="fas fa-phone"></i>
                         Prenons Contact
                     </div>
-                    <h2 class="section-title">Démarrons Votre Projet</h2>
+                    <h2 class="section-title">Démarrons votre projet</h2>
                     <p class="section-subtitle">
-                        Notre équipe d'experts est prête à vous accompagner dans tous vos défis logistiques
+                        Contactez-nous pour des solutions douanières fiables, une logistique fluide et un entreposage sécurisé.
                     </p>
                 </div>
 
@@ -70,4 +70,3 @@
                 </div>
             </div>
         </section>
-

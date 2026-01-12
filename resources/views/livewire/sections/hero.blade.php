@@ -2,9 +2,10 @@
   <div class="container hero-impact-grid">
     <div class="hero-impact-copy">
       <div class="hero-impact-kicker">Transitaire officiel de la République Démocratique du Congo</div>
-      <h1 class="hero-impact-title">Transit RDC, vitesse & conformité.</h1>
+      <h1 class="hero-impact-title">Transit RDC rigoureux, rapide et conforme.</h1>
       <p class="hero-impact-lead">
-        Dédouanement, transport et logistique pilotés par une équipe locale, avec des délais maîtrisés et un suivi clair.
+        NewCustoms Agency est un leader en douane, logistique et entreposage en RDC. Transitaire agréé officiel, nous
+        simplifions vos démarches, facilitons le commerce international et assurons un suivi clair à chaque étape.
       </p>
       <div class="hero-impact-actions">
         <a href="#services" class="btn btn-primary">

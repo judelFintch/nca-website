@@ -352,6 +352,22 @@ item.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
 faqObserver.observe(item);
 });
 
+// Carousel galerie
+const showcaseTrack = document.getElementById('showcase-track');
+if (showcaseTrack) {
+    const prevBtn = showcaseTrack.parentElement.querySelector('.carousel-btn.prev');
+    const nextBtn = showcaseTrack.parentElement.querySelector('.carousel-btn.next');
+    const scrollAmount = () => showcaseTrack.querySelector('.showcase-item')?.offsetWidth || 260;
+
+    prevBtn?.addEventListener('click', () => {
+        showcaseTrack.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+    });
+
+    nextBtn?.addEventListener('click', () => {
+        showcaseTrack.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+    });
+}
+
 // Amélioration de la navigation vers les nouvelles sections
 const navLinks = document.querySelectorAll('a[href^="#"]');
 navLinks.forEach(link => {

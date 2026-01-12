@@ -1,4 +1,4 @@
-<section id="carburant" class="section section-alt animate-on-scroll">
+<section id="carburant" class="section vision-mission animate-on-scroll">
     <div class="container">
         <div class="callout-grid">
             <div>
@@ -6,10 +6,10 @@
                     <i class="fas fa-gas-pump"></i>
                     Déclaration Carburant
                 </div>
-                <h2 class="section-title">Déclaration carburant rapide & conforme</h2>
+                <h2 class="section-title">Déclaration carburant rapide et conforme</h2>
                 <p class="section-subtitle">
-                    Dossiers réglementaires, suivi des volumes et interface avec les autorités. Un process clair pour
-                    éviter les blocages.
+                    Dossiers réglementaires, suivi des volumes et interface avec les autorités. Un processus clair pour
+                    sécuriser vos opérations sur tout le territoire RDC.
                 </p>
                 <div class="callout-highlights">
                     <span>Délais maîtrisés</span>

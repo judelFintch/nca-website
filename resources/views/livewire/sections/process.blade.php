@@ -6,24 +6,26 @@
         Notre méthode
       </div>
       <h2 class="section-title">Un process clair en 3 étapes</h2>
-      <p class="section-subtitle">Un cadre simple pour sécuriser vos opérations et tenir les délais.</p>
+      <p class="section-subtitle">
+        Nous cadrons chaque dossier, validons la conformité, puis pilotons l'exécution pour assurer la fluidité du transit.
+      </p>
     </div>
 
     <div class="process-grid">
       <div class="process-card">
         <div class="process-index">1</div>
         <h4>Qualification</h4>
-        <p>Analyse du dossier et cadrage des priorités dès le premier échange.</p>
+        <p>Analyse des documents, vérification des exigences RDC et définition du plan d'action.</p>
       </div>
       <div class="process-card">
         <div class="process-index">2</div>
         <h4>Plan & conformité</h4>
-        <p>Routes, coûts et validation douanière pour sécuriser l’opération.</p>
+        <p>Choix du mode de transport, validation douanière et chiffrage fiable des coûts.</p>
       </div>
       <div class="process-card">
         <div class="process-index">3</div>
         <h4>Exécution & suivi</h4>
-        <p>Dédouanement, transit et reporting clair jusqu’à livraison.</p>
+        <p>Dédouanement, transit et reporting clair jusqu'à la livraison finale.</p>
       </div>
     </div>
   </div>

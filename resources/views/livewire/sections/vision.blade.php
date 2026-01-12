@@ -7,7 +7,7 @@
             </div>
             <h2 class="section-title">Notre Engagement</h2>
             <p class="section-subtitle">
-                Trois piliers pour des opérations fluides, fiables et conformes en RDC.
+                Notre engagement : excellence du service, intégrité et conformité à chaque étape.
             </p>
         </div>
 

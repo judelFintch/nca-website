@@ -12,9 +12,8 @@
                             </div>
                         </div>
                         <p class="footer-text">
-                            Transit Douane et Fret de la RDC Groupe - Leader incontesté de la logistique en République
-                            Démocratique du Congo.
-                            Votre partenaire de confiance depuis plus de 15 ans.
+                            NewCustoms Agency est un leader en douane, logistique et entreposage en RDC. Nous simplifions
+                            vos démarches, facilitons vos opérations internationales et assurons un service conforme et fiable.
                         </p>
                         <div class="social-links">
                             <a href="#" class="social-link" aria-label="Facebook">
