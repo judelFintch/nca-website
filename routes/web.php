@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 use App\Livewire\HomePage;
 
 Route::get('/', HomePage::class);
@@ -12,7 +13,12 @@ Route::get('/lang/{locale}', function ($locale) {
         session(['locale' => $locale]);
         app()->setLocale($locale);
     }
-    return redirect()->back();
+    $previous = url()->previous();
+    $appUrl = rtrim((string) config('app.url'), '/');
+    if ($previous && $appUrl && Str::startsWith($previous, $appUrl)) {
+        return redirect()->to($previous);
+    }
+    return redirect('/');
 });
 
 // Simple sitemap (dynamically generated)
