@@ -1,44 +1,26 @@
-<section id="services" class="section animate-on-scroll">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">
-                <i class="fas fa-layer-group"></i>
-                Offre complète
-            </div>
-            <h2 class="section-title">Des services logistiques intégrés</h2>
-            <p class="section-subtitle">
-                Des solutions sur mesure, adaptées aux besoins des PME comme des grands groupes internationaux.
-            </p>
-        </div>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-ship"></i></div>
-                <h3>Dédouanement</h3>
-                <p>Formalités, déclarations et autorisations douanières avec un contrôle rigoureux.</p>
-                <a href="#contact" class="text-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-truck"></i></div>
-                <h3>Transport multimodal</h3>
-                <p>Routier, ferroviaire et maritime pour faciliter vos opérations internationales.</p>
-                <a href="#contact" class="text-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-warehouse"></i></div>
-                <h3>Entreposage sécurisé</h3>
-                <p>Stockage sécurisé, inventaire et préparation de lots avec traçabilité.</p>
-                <a href="#contact" class="text-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-oil-can"></i></div>
-                <h3>Déclaration carburant</h3>
-                <p>Conformité et reporting pour les produits pétroliers et lubrifiants.</p>
-                <a href="#contact" class="text-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
+<section id="services" class="services-modern animate-on-scroll">
+  <div class="container">
+    <div class="modern-heading">
+      <div><span class="eyebrow">Nos expertises</span><h2>Un seul partenaire.<br><em>Tous vos mouvements.</em></h2></div>
+      <div class="modern-heading-side"><span>01 — Services</span><p>Nous réunissons les expertises essentielles pour rendre vos opérations plus fluides, plus prévisibles et plus simples à piloter.</p></div>
     </div>
+
+    <div class="services-editorial">
+      <article class="service-wide service-wide-featured">
+        <img class="service-featured-photo" src="{{ asset('images/nca-customs-v1.png') }}" alt="Expert douanier vérifiant un dossier d’importation" loading="lazy">
+        <div class="service-wide-top"><span class="service-wide-number">01</span><span class="service-wide-icon"><i class="fas fa-file-shield"></i></span></div>
+        <div class="service-wide-content"><h3>Douane & conformité</h3><p>Nous préparons, vérifions et suivons vos dossiers auprès des autorités pour réduire les blocages et sécuriser chaque passage.</p></div>
+        <div class="service-wide-meta"><span>Dédouanement</span><span>Conseil réglementaire</span><span>Carburant</span></div>
+        <a href="#contact" aria-label="Demander un devis pour la douane"><i class="fas fa-arrow-up-right-from-square"></i></a>
+      </article>
+
+      <article class="service-wide service-wide-image">
+        <img src="{{ asset('images/nca-warehouse-v1.png') }}" alt="Entrepôt moderne et équipe logistique en RDC" loading="lazy">
+        <div class="service-image-overlay"><span>02</span><h3>Entreposage & distribution</h3><p>Stockage organisé, gestion des marchandises et préparation avant leur distribution.</p></div>
+      </article>
+
+      <article class="service-compact"><span class="service-wide-number">03</span><span class="service-wide-icon"><i class="fas fa-route"></i></span><h3>Transport multimodal</h3><p>Route, rail, mer ou air selon votre marchandise.</p><a href="#contact">Découvrir <i class="fas fa-arrow-right"></i></a></article>
+      <article class="service-compact"><span class="service-wide-number">04</span><span class="service-wide-icon"><i class="fas fa-chart-line"></i></span><h3>Conseil logistique</h3><p>Des décisions plus claires pour maîtriser coûts et délais.</p><a href="#contact">Nous consulter <i class="fas fa-arrow-right"></i></a></article>
+    </div>
+  </div>
 </section>

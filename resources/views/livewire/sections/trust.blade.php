@@ -1,19 +1,13 @@
-<section class="trust-band">
-  <div class="container trust-band-inner">
-    <div class="trust-label">Chiffres clés</div>
-    <div class="trust-metrics">
-      <div class="trust-metric">
-        <span class="trust-value">000272</span>
-        <span class="trust-text">Agrément officiel</span>
-      </div>
-      <div class="trust-metric">
-        <span class="trust-value">15+</span>
-        <span class="trust-text">Années d'expérience</span>
-      </div>
-      <div class="trust-metric">
-        <span class="trust-value">24/7</span>
-        <span class="trust-text">Support dédié</span>
-      </div>
+<section class="proof-section" aria-label="Les engagements de New Custom Agency">
+  <div class="container proof-shell">
+    <div class="proof-intro">
+      <span class="proof-overline">Notre promesse</span>
+      <p>Une logistique qui inspire confiance,<br>du premier document à la livraison.</p>
+    </div>
+    <div class="proof-items">
+      <div class="proof-item"><span>01</span><i class="fas fa-gauge-high"></i><div><strong>Rapidité</strong><small>Des opérations traitées avec réactivité.</small></div></div>
+      <div class="proof-item"><span>02</span><i class="fas fa-shield-halved"></i><div><strong>Confiance</strong><small>Un suivi sérieux à chaque étape.</small></div></div>
+      <div class="proof-item"><span>03</span><i class="fas fa-hand-pointer"></i><div><strong>Simplicité</strong><small>Des démarches claires et accessibles.</small></div></div>
     </div>
   </div>
 </section>

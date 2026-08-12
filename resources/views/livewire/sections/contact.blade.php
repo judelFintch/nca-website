@@ -1,72 +1,20 @@
-        <section id="contact" class="section animate-on-scroll">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <i class="fas fa-phone"></i>
-                        Prenons Contact
-                    </div>
-                    <h2 class="section-title">Démarrons votre projet</h2>
-                    <p class="section-subtitle">
-                        Contactez-nous pour des solutions douanières fiables, une logistique fluide et un entreposage sécurisé.
-                    </p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3 style="margin-bottom: 2rem; color: var(--primary-600);">Contactez-nous</h3>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900);">Siège
-                                    Social</h4>
-                                <p style="color: var(--gray-600); margin: 0; line-height: 1.6;">
-                                    Avenue Kasavubu, 24<br>
-                                    Lubumbashi, Haut Katanga<br>
-                                    République Démocratique du Congo<br>
-                                    <strong>Agrément N° 000272</strong>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900);">
-                                    Téléphones</h4>
-                                <p style="color: var(--gray-600); margin: 0; line-height: 1.6;">
-                                    <a href="tel:+24384454797"
-                                        style="color: var(--primary-600); text-decoration: none; font-weight: 600;">(+243)
-                                        84 45 47 797</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: var(--gray-900);">Horaires
-                                    de Service</h4>
-                                <p style="color: var(--gray-600); margin: 0; line-height: 1.6;">
-                                    <strong>Lun - Ven:</strong> 8h00 - 17h00<br>
-                                    <strong>Samedi:</strong> 8h00 - 12h00<br>
-                                    <strong>Support urgence:</strong> 24h/7j
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-container">
-                        <h3 style="margin-bottom: 2rem; color: var(--primary-600);">Demande de Devis Gratuit</h3>
-
-                        @livewire('contact-form')
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="contact" class="contact-section animate-on-scroll">
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <span class="eyebrow eyebrow-light">Un besoin logistique&nbsp;?</span>
+      <h2>Parlons-en simplement.</h2>
+      <p>Indiquez-nous la marchandise, son origine et sa destination. Notre équipe étudie votre demande et vous propose une solution claire, adaptée à votre opération.</p>
+      <div class="contact-route-mini"><span>Origine</span><i class="fas fa-arrow-right"></i><strong>Votre projet</strong><i class="fas fa-arrow-right"></i><span>Destination</span></div>
+      <div class="contact-details">
+        <a href="tel:+24384454797"><i class="fas fa-phone"></i><span><small>Téléphone</small>+243 84 45 47 797</span></a>
+        <a href="mailto:contact@newcustomagency.cd"><i class="fas fa-envelope"></i><span><small>Email</small>contact@newcustomagency.cd</span></a>
+        <div><i class="fas fa-location-dot"></i><span><small>Siège</small>24, avenue Kasavubu, Lubumbashi</span></div>
+      </div>
+      <a href="https://wa.me/24384454797" class="whatsapp-link"><i class="fab fa-whatsapp"></i> Échanger sur WhatsApp</a>
+    </div>
+    <div class="contact-form-card">
+      <div class="form-heading"><span>Demande de devis</span><small>Réponse sous 24 heures ouvrées</small></div>
+      @livewire('contact-form')
+    </div>
+  </div>
+</section>

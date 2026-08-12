@@ -1,43 +1,13 @@
-<section id="galerie" class="section section-alt animate-on-scroll">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">
-                <i class="fas fa-camera-retro"></i>
-                Galerie
-            </div>
-            <h2 class="section-title">Un aperçu de nos opérations</h2>
-            <p class="section-subtitle">
-                Des images de nos équipes, bureaux, entrepôts et opérations terrain qui illustrent notre présence et notre méthode.
-            </p>
-        </div>
-
-        <div class="showcase-carousel">
-            <button class="carousel-btn prev" type="button" aria-label="Image précédente">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="showcase-track" id="showcase-track">
-                <figure class="showcase-item">
-                    <img src="{{ asset('images/1.webp') }}" alt="Opérations terrain NCA" />
-                </figure>
-                <figure class="showcase-item">
-                    <img src="{{ asset('images/2.webp') }}" alt="Équipe NCA" />
-                </figure>
-                <figure class="showcase-item">
-                    <img src="{{ asset('images/3.webp') }}" alt="Logistique NCA" />
-                </figure>
-                <figure class="showcase-item">
-                    <img src="{{ asset('images/4.webp') }}" alt="Activités NCA" />
-                </figure>
-                <figure class="showcase-item">
-                    <img src="{{ asset('images/5Y2A2956.webp') }}" alt="Opérations NCA" />
-                </figure>
-                <figure class="showcase-item showcase-item--contain">
-                    <img src="{{ asset('images/logo.jpeg') }}" alt="Logo NCA" />
-                </figure>
-            </div>
-            <button class="carousel-btn next" type="button" aria-label="Image suivante">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
+<section id="galerie" class="showcase-section animate-on-scroll">
+  <div class="container">
+    <div class="section-intro split-intro gallery-heading">
+      <div><span class="eyebrow">NCA sur le terrain</span><h2>La logistique est un métier de présence.</h2></div>
+      <div><span class="gallery-index">04 — Terrain</span><p>À Lubumbashi comme sur vos corridors d’approvisionnement, nos équipes restent proches des opérations.</p></div>
     </div>
+    <div class="photo-grid">
+      <figure class="photo-cell photo-main"><img src="{{ asset('images/1.webp') }}" alt="Opération d’import-export NCA" loading="lazy"><figcaption><span>01</span>Coordination terrain</figcaption></figure>
+      <figure class="photo-cell"><img src="{{ asset('images/3.webp') }}" alt="Logistique et transport en RDC" loading="lazy"><figcaption><span>02</span>Transport</figcaption></figure>
+      <figure class="photo-cell"><img src="{{ asset('images/nca-customs-v1.png') }}" alt="Préparation d’un dossier douanier" loading="lazy"><figcaption><span>03</span>Douane & conformité</figcaption></figure>
+    </div>
+  </div>
 </section>

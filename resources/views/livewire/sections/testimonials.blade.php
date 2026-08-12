@@ -1,79 +1,81 @@
-<section id="testimonials" class="py-12 bg-gray-50 dark:bg-gray-900 animate-on-scroll">
-  <div class="container mx-auto px-4">
-    <div class="text-center">
-      <h2 class="text-3xl font-bold">Ce que disent nos clients</h2>
-      <p class="text-gray-600 dark:text-gray-300 mt-2">La satisfaction de nos clients guide notre engagement quotidien.</p>
+<section id="testimonials" class="section-blue-tint sep-top filigrane filigrane-grid animate-on-scroll">
+  <div class="container">
+
+    <div class="sec-header centered">
+      <div class="sec-badge sec-badge-gold">
+        <i class="fas fa-star"></i>
+        Témoignages
+      </div>
+      <h2 class="sec-title">Ce que disent<br>nos clients.</h2>
+      <p class="sec-sub">La satisfaction de nos partenaires est notre meilleure carte de visite.</p>
     </div>
 
-    <div class="mt-8 relative">
-      <div id="testimonials-track" class="flex overflow-hidden">
-        <blockquote class="w-full p-6 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-nca-700 text-white flex items-center justify-center font-bold">KM</div>
-            <div>
-              <p class="text-gray-800 dark:text-gray-100 italic">"New Custom Agency a révolutionné notre chaîne logistique. Leur expertise en dédouanement et leur réactivité exceptionnelle nous permettent de maintenir nos délais de livraison. Une équipe vraiment professionnelle !"</p>
-              <footer class="mt-4">
-                <div class="font-semibold">Marcel Kabamba</div>
-                <div class="text-sm text-gray-500">Directeur Logistique - Katanga Motorcy TVS</div>
-              </footer>
-            </div>
-          </div>
-        </blockquote>
+    <div class="testi-grid">
 
-        <blockquote class="w-full p-6 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-nca-700 text-white flex items-center justify-center font-bold">CC</div>
-            <div>
-              <p class="text-gray-800 dark:text-gray-100 italic">"Partenaire fiable depuis 8 ans, NCA gère tous nos transports de matériaux de construction. Leur connaissance du terrain congolais et leur réseau nous font gagner un temps précieux sur nos chantiers."</p>
-              <footer class="mt-4">
-                <div class="font-semibold">Sarah Mukendi</div>
-                <div class="text-sm text-gray-500">Responsable Achats - Capital Construction</div>
-              </footer>
-            </div>
+      <div class="testi-card">
+        <span class="testi-qmark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">
+          "New Custom Agency a révolutionné notre chaîne logistique. Leur expertise en dédouanement
+          et leur réactivité exceptionnelle nous permettent de maintenir nos délais de livraison."
+        </p>
+        <div class="testi-author">
+          <div class="testi-av">MK</div>
+          <div>
+            <span class="testi-name">Marcel Kabamba</span>
+            <span class="testi-role">Directeur Logistique — Katanga Motorcy TVS</span>
           </div>
-        </blockquote>
-
-        <blockquote class="w-full p-6 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-nca-700 text-white flex items-center justify-center font-bold">PM</div>
-            <div>
-              <p class="text-gray-800 dark:text-gray-100 italic">"L'efficacité de NCA dans le transport de nos équipements miniers est remarquable. Ils comprennent nos contraintes et proposent toujours des solutions adaptées. Un vrai partenariat de confiance."</p>
-              <footer class="mt-4">
-                <div class="font-semibold">David Mwamba</div>
-                <div class="text-sm text-gray-500">Operations Manager - Paragon Mining</div>
-              </footer>
-            </div>
-          </div>
-        </blockquote>
-
-        <blockquote class="w-full p-6 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-full bg-nca-700 text-white flex items-center justify-center font-bold">DC</div>
-            <div>
-              <p class="text-gray-800 dark:text-gray-100 italic">"New Custom Agency maîtrise parfaitement les procédures douanières. Leurs conseils nous ont permis d'optimiser nos importations et de réduire significativement nos coûts logistiques."</p>
-              <footer class="mt-4">
-                <div class="font-semibold">Françoise Tshimanga</div>
-                <div class="text-sm text-gray-500">Directrice Commerciale - Diamond & Company</div>
-              </footer>
-            </div>
-          </div>
-        </blockquote>
+        </div>
       </div>
 
-      <div class="mt-6 flex justify-center gap-3" id="testimonials-nav">
-        <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 active:bg-nca-700" data-slide="0" aria-label="Slide 1"></button>
-        <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 active:bg-nca-700" data-slide="1" aria-label="Slide 2"></button>
-        <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 active:bg-nca-700" data-slide="2" aria-label="Slide 3"></button>
-        <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 active:bg-nca-700" data-slide="3" aria-label="Slide 4"></button>
+      <div class="testi-card">
+        <span class="testi-qmark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">
+          "Partenaire fiable depuis 8 ans, NCA gère tous nos transports de matériaux de construction.
+          Leur connaissance du terrain congolais nous fait gagner un temps précieux sur nos chantiers."
+        </p>
+        <div class="testi-author">
+          <div class="testi-av">SM</div>
+          <div>
+            <span class="testi-name">Sarah Mukendi</span>
+            <span class="testi-role">Responsable Achats — Capital Construction</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Navigation arrows -->
-      <div class="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
-        <button id="testimonial-prev" class="p-2 rounded-full bg-white shadow-sm"><i class="fas fa-chevron-left"></i></button>
+      <div class="testi-card">
+        <span class="testi-qmark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">
+          "L'efficacité de NCA dans le transport de nos équipements miniers est remarquable.
+          Ils comprennent nos contraintes et proposent toujours des solutions adaptées."
+        </p>
+        <div class="testi-author">
+          <div class="testi-av">DM</div>
+          <div>
+            <span class="testi-name">David Mwamba</span>
+            <span class="testi-role">Operations Manager — Paragon Mining</span>
+          </div>
+        </div>
       </div>
-      <div class="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
-        <button id="testimonial-next" class="p-2 rounded-full bg-white shadow-sm"><i class="fas fa-chevron-right"></i></button>
+
+      <div class="testi-card">
+        <span class="testi-qmark">"</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">
+          "New Custom Agency maîtrise parfaitement les procédures douanières. Leurs conseils nous ont
+          permis d'optimiser nos importations et de réduire significativement nos coûts."
+        </p>
+        <div class="testi-author">
+          <div class="testi-av">FT</div>
+          <div>
+            <span class="testi-name">Françoise Tshimanga</span>
+            <span class="testi-role">Directrice Commerciale — Diamond &amp; Company</span>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>

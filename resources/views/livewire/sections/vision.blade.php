@@ -1,40 +1,20 @@
-<section id="vision" class="section vision-mission animate-on-scroll">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">
-                <i class="fas fa-compass"></i>
-                Notre Direction
-            </div>
-            <h2 class="section-title">Notre Engagement</h2>
-            <p class="section-subtitle">
-                Notre engagement : excellence du service, intégrité et performance opérationnelle.
-            </p>
-        </div>
-
-        <div class="commitment-grid">
-            <div class="commitment-card">
-                <div class="commitment-icon">
-                    <i class="fas fa-shield-check"></i>
-                </div>
-                <h3>Conformité & Sécurité</h3>
-                <p>Contrôle documentaire rigoureux et respect strict des exigences douanières.</p>
-            </div>
-
-            <div class="commitment-card">
-                <div class="commitment-icon">
-                    <i class="fas fa-route"></i>
-                </div>
-                <h3>Fluidité Opérationnelle</h3>
-                <p>Coordination terrain et suivi précis pour réduire les délais et les blocages.</p>
-            </div>
-
-            <div class="commitment-card">
-                <div class="commitment-icon">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <h3>Partenaire Durable</h3>
-                <p>Un interlocuteur unique et des reportings clairs pour vos équipes.</p>
-            </div>
-        </div>
+<section id="vision" class="vision-section animate-on-scroll">
+  <div class="container vision-layout">
+    <div class="vision-visual">
+      <img src="{{ asset('images/nca-team-operations-v1.png') }}" alt="Équipe NCA coordonnant une opération logistique" loading="lazy">
+      <div class="vision-caption"><span>Depuis la RDC</span><strong>vers de nouveaux horizons.</strong></div>
     </div>
+    <div class="vision-copy">
+      <span class="eyebrow">Notre ambition</span>
+      <h2>Grandir depuis la RDC, sans perdre notre proximité.</h2>
+      <p class="vision-lead">Notre connaissance du terrain congolais est notre force. Elle nous permet aujourd’hui de bâtir des connexions plus fluides avec les marchés régionaux et internationaux.</p>
+      <p>NCA veut devenir un partenaire logistique de référence en Afrique centrale : une entreprise fiable, accessible et capable de suivre la croissance de ses clients partout où leurs projets les conduisent.</p>
+      <div class="vision-values">
+        <div><span>01</span><strong>Rapidité</strong><p>Des opérations traitées avec réactivité.</p></div>
+        <div><span>02</span><strong>Confiance</strong><p>Un suivi sérieux à chaque étape.</p></div>
+        <div><span>03</span><strong>Simplicité</strong><p>Des démarches claires et accessibles.</p></div>
+      </div>
+      <div class="vision-horizon"><span>Lubumbashi</span><i class="fas fa-arrow-right"></i><span>RDC</span><i class="fas fa-arrow-right"></i><span>Afrique centrale</span></div>
+    </div>
+  </div>
 </section>

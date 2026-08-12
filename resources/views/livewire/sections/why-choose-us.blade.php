@@ -1,37 +1,30 @@
-<section id="why" class="section animate-on-scroll">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-badge">
-                <i class="fas fa-check-circle"></i>
-                Pourquoi NCA
-            </div>
-            <h2 class="section-title">Un partenaire qui sécurise vos flux</h2>
-            <p class="section-subtitle">
-                Une méthode claire, une communication transparente et une exécution fiable.
-            </p>
-        </div>
-
-        <div class="why-grid">
-            <div class="value-card">
-                <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
-                <h3>Conformité garantie</h3>
-                <p>Respect strict des réglementations, intégrité, confidentialité et contrôle documentaire.</p>
-            </div>
-            <div class="value-card">
-                <div class="value-icon"><i class="fas fa-stopwatch"></i></div>
-                <h3>Exécution efficace</h3>
-                <p>Procédures simplifiées pour fluidifier vos opérations et limiter les blocages.</p>
-            </div>
-            <div class="value-card">
-                <div class="value-icon"><i class="fas fa-network-wired"></i></div>
-                <h3>Réseau solide</h3>
-                <p>Des partenaires fiables et une coordination terrain maîtrisée.</p>
-            </div>
-            <div class="value-card">
-                <div class="value-icon"><i class="fas fa-user-check"></i></div>
-                <h3>Interlocuteur unique</h3>
-                <p>Une relation durable, une communication transparente et un service réactif.</p>
-            </div>
-        </div>
+<section id="why" class="cta-section animate-on-scroll">
+  <div class="cta-orb-1"></div>
+  <div class="cta-orb-2"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="sec-badge sec-badge-blue" style="margin-bottom:1.75rem;">
+        <i class="fas fa-bolt"></i>
+        Pourquoi NCA ?
+      </div>
+      <h2>
+        Prêts à sécuriser<br>
+        votre <em>chaîne logistique</em> ?
+      </h2>
+      <p>
+        Un transitaire agréé, une équipe terrain, une exécution sans faille.
+        Rejoignez les 500+ entreprises qui nous font confiance en RDC.
+      </p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-file-invoice"></i>
+          Demander un devis gratuit
+        </a>
+        <a href="https://wa.me/24384454797" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          Écrire sur WhatsApp
+        </a>
+      </div>
     </div>
+  </div>
 </section>

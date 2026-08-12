@@ -1,32 +1,16 @@
-<section class="section section-alt animate-on-scroll">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-badge">
-        <i class="fas fa-route"></i>
-        Notre méthode
-      </div>
-      <h2 class="section-title">Un process clair en 3 étapes</h2>
-      <p class="section-subtitle">
-        Nous cadrons chaque dossier, validons la conformité, puis pilotons l'exécution pour assurer la fluidité du transit.
-      </p>
+<section id="methode" class="process-section animate-on-scroll">
+  <div class="container process-layout">
+    <div class="process-copy">
+      <span class="eyebrow eyebrow-light">Notre méthode</span>
+      <h2>Vous savez toujours où en est votre dossier.</h2>
+      <p>Un accompagnement humain, une information utile au bon moment et un responsable qui suit votre opération de bout en bout.</p>
+      <a href="#contact" class="btn btn-light">Confier une opération <i class="fas fa-arrow-right"></i></a>
+      <div class="process-route-signature"><span>Origine</span><i></i><b>RDC</b><i></i><span>Destination</span></div>
     </div>
-
-    <div class="process-grid">
-      <div class="process-card">
-        <div class="process-index">1</div>
-        <h4>Qualification</h4>
-        <p>Analyse des documents, vérification des exigences RDC et définition du plan d'action.</p>
-      </div>
-      <div class="process-card">
-        <div class="process-index">2</div>
-        <h4>Plan & conformité</h4>
-        <p>Choix du mode de transport, validation douanière et chiffrage fiable des coûts.</p>
-      </div>
-      <div class="process-card">
-        <div class="process-index">3</div>
-        <h4>Exécution & suivi</h4>
-        <p>Dédouanement, transit et reporting clair jusqu'à la livraison finale.</p>
-      </div>
-    </div>
+    <ol class="process-steps">
+      <li class="process-step"><span>01</span><div><small>Cadrage</small><h3>Nous écoutons</h3><p>Besoin, marchandise, origine, destination et contraintes : nous cadrons le dossier avant de vous engager.</p></div><i class="fas fa-comments"></i></li>
+      <li class="process-step"><span>02</span><div><small>Préparation</small><h3>Nous sécurisons</h3><p>Documents, conformité, itinéraire et budget sont vérifiés pour limiter les imprévus.</p></div><i class="fas fa-file-circle-check"></i></li>
+      <li class="process-step"><span>03</span><div><small>Exécution</small><h3>Nous coordonnons</h3><p>Notre équipe pilote les intervenants et vous informe jusqu’à la remise de la marchandise.</p></div><i class="fas fa-route"></i></li>
+    </ol>
   </div>
 </section>
