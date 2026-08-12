@@ -5,6 +5,9 @@
     "scripts": {
         "prebuild": "php -r \"is_file('public/hot') && unlink('public/hot');\"",
         "build": "vite build",
+        "postbuild": "node scripts/verify-build.mjs",
+        "build:save": "npm run build && git add -f public/build",
+        "build:check": "node scripts/verify-build.mjs",
         "dev": "vite"
     },
     "devDependencies": {

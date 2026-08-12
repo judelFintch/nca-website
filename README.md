@@ -7,6 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Build de production
+
+Les fichiers Vite de `public/build` sont versionnés afin que le site fonctionne
+sur un hébergement qui n'exécute pas Node.js pendant le déploiement.
+
+Avant chaque mise en ligne, exécuter :
+
+```bash
+npm ci
+npm run build:save
+git commit -m "build: update production assets"
+```
+
+`build:save` supprime l'éventuel fichier `public/hot`, compile les ressources,
+vérifie le manifeste et tous les fichiers qu'il référence, puis ajoute le build
+à l'index Git. La commande `npm run build:check` permet uniquement de vérifier
+un build déjà présent.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

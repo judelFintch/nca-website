@@ -16,6 +16,10 @@
 
 /public/hot
 /public/storage
+# Les fichiers Vite de production sont volontairement versionnés afin que les
+# hébergements sans Node.js disposent toujours du manifeste et des assets.
+!/public/build/
+!/public/build/**
 /storage/*.key
 /storage/pail
 /vendor

@@ -19,8 +19,14 @@
         <div class="service-image-overlay"><span>02</span><h3>Entreposage & distribution</h3><p>Stockage organisé, gestion des marchandises et préparation avant leur distribution.</p></div>
       </article>
 
-      <article class="service-compact"><span class="service-wide-number">03</span><span class="service-wide-icon"><i class="fas fa-route"></i></span><h3>Transport multimodal</h3><p>Route, rail, mer ou air selon votre marchandise.</p><a href="#contact">Découvrir <i class="fas fa-arrow-right"></i></a></article>
-      <article class="service-compact"><span class="service-wide-number">04</span><span class="service-wide-icon"><i class="fas fa-chart-line"></i></span><h3>Conseil logistique</h3><p>Des décisions plus claires pour maîtriser coûts et délais.</p><a href="#contact">Nous consulter <i class="fas fa-arrow-right"></i></a></article>
+      <article class="service-compact service-compact-photo">
+        <img src="{{ asset('images/3.webp') }}" alt="Transport multimodal suivi par NCA" loading="lazy" decoding="async">
+        <span class="service-wide-number">03</span><span class="service-wide-icon"><i class="fas fa-route"></i></span><h3>Transport multimodal</h3><p>Route, rail, mer ou air selon votre marchandise.</p><a href="#contact">Découvrir <i class="fas fa-arrow-right"></i></a>
+      </article>
+      <article class="service-compact service-compact-photo">
+        <img src="{{ asset('images/4.webp') }}" alt="Conseil et coordination logistique NCA" loading="lazy" decoding="async">
+        <span class="service-wide-number">04</span><span class="service-wide-icon"><i class="fas fa-chart-line"></i></span><h3>Conseil logistique</h3><p>Des décisions plus claires pour maîtriser coûts et délais.</p><a href="#contact">Nous consulter <i class="fas fa-arrow-right"></i></a>
+      </article>
     </div>
   </div>
 </section>

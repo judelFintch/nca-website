@@ -1,0 +1,33 @@
+name: Verify production build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and verify assets
+        run: npm run build
+
+      - name: Ensure the production build is committed
+        run: |
+          if [ -n "$(git status --porcelain -- public/build)" ]; then
+            git status --short -- public/build
+            echo "Run 'npm run build:save' and commit the generated files."
+            exit 1
+          fi
